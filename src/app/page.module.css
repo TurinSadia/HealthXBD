@@ -711,7 +711,7 @@
     border-radius: 8px;
     margin-bottom: 6px;
     height: auto;
-    width: auto;
+    width: 100%;
     margin: auto;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
