@@ -138,6 +138,11 @@
 
 /* Mobile Menu */
 @media (max-width: 1024px) {
+    .navbar {
+            
+            padding: 24px 20px;
+        }
+        
     .menuIcon {
         display: block;
         /* Show menu icon on mobile */
