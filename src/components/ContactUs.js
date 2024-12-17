@@ -59,7 +59,7 @@ const ContactUs = () => {
       src="/Group 30 (1).png" // Replace with your image path
       alt="Contact Image"
       width={500}
-    height={600}
+    height={800}
     className={styles.FormDImage}
     />
   </div>

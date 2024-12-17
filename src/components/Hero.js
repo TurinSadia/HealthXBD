@@ -5,6 +5,7 @@ import styles from '@/app/page.module.css'; // Import styles from page.module.cs
 
 const Hero = () => {
   return (
+    <div>
     <section className={styles.hero}>
       <div className={styles.heroContent}>
         {/* Left Column */}
@@ -27,7 +28,7 @@ const Hero = () => {
 A brief statement outlining the purpose and mission of the clinic. This can include
 the commitment to patient care, community health.          </p>
           <div className={styles.btnContainer}>
-            <button className={styles.heroBtn}>Discover More</button>
+            <button className={styles.heroBtn1}>Discover More</button>
             <button className={styles.heroBtn}>See All Services</button>
           </div>
         </div>
@@ -43,7 +44,38 @@ the commitment to patient care, community health.          </p>
           />
         </div>
       </div>
-    </section>
+    </section >
+      
+
+
+
+{/* <!-- Search Section --> */}
+<section className={styles.searchSection}>
+  <div className={styles.searchContainer}>
+    {/* <!-- Search Input 1 --> */}
+    <div className={styles.searchCol}>
+      <Image src="/icon.png" alt="Search Icon" width={100} height={100} className={styles.searchIcon} />
+      <input type="text" placeholder="Ex. Doctor, Hospital" className={styles.searchInput} />
+    </div>
+
+    {/* <!-- Search Input 2 --> */}
+    <div className={styles.searchCol}>
+      <Image src="/icon.png" alt="Search Icon" width={100} height={100} className={styles.searchIcon} />
+      <input type="text" placeholder="Ex. Surgeon, Cardiologist" className={styles.searchInput} />
+    </div>
+
+    {/* <!-- Search Input 3 --> */}
+    <div className={styles.searchCol}>
+      <Image src="/Location marker.png" alt="Location Icon" width={100} height={100} className={styles.searchIcon} />
+      <input type="text" placeholder="Set your location" className={styles.searchInput} />
+    </div>
+
+    {/* <!-- Search Button --> */}
+    <button className={styles.searchIconBtn}>Search</button>
+  </div>
+</section>
+</div>
+
   );
 };
 

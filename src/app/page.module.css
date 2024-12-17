@@ -106,7 +106,7 @@
 .searchBtn,
 .cartBtn {
     border: none;
-    background-color: #F8F8F8;
+    background-color: #ffff;
 }
 
 .appointmentBtn {
@@ -142,7 +142,7 @@
             
             padding: 24px 20px;
         }
-        
+
     .menuIcon {
         display: block;
         /* Show menu icon on mobile */
@@ -199,7 +199,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 50px 20px;
+    padding: 0px 20px;
     background-color: #F1FAFFB2;
 }
 
@@ -304,6 +304,21 @@
     gap: 20px;
 }
 
+.heroBtn1{
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: -webkit-gradient(linear, left top, left bottom, from(#014990), to(#DAEDFF));
+    background: -o-linear-gradient(top, #2CBEFF, #00a3f4,#DAEDFF);
+    background: linear-gradient(to bottom, #2CBEFF, #00A4F4,#DAEDFF);
+    color: white;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;}
+
 .heroBtn {
     padding: 15px 25px;
     font-size: 1rem;
@@ -373,6 +388,97 @@
     }
 }
 
+
+
+
+
+/* Search Section */
+.searchSection {
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 50px 20px;
+    margin-top: -100px;
+    background-color: white;
+    -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Search Column */
+.searchCol {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    gap: 10px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.searchIcon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+}
+
+.searchIconBtn {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(to bottom, #014990, #DAEDFF);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.searchBtn:hover {
+    background: linear-gradient(to right, #013472, #b3d7ff);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .searchContainer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .searchCol {
+        min-width: 100%;
+    }
+
+    .searchIconBtn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
 /* ----------------------Our Services------------------------------ */
 
 /* app/page.module.css */
@@ -382,7 +488,7 @@
 .contactUsInfo,
 .doctorsInfo,
 .ourServices {
-    padding: 120px 20px;
+    padding: 70px 20px;
 }
 
 .title {
@@ -630,7 +736,7 @@
 
 .chooseUsTitle {
     padding: 20px 0;
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: #000D44;
     font-weight: 600;
     line-height: 1.5;
