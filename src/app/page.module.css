@@ -199,7 +199,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 0px 20px;
+    padding: 50px 20px 0;
     background-color: #F1FAFFB2;
 }
 
@@ -293,6 +293,7 @@
 
 .description {
     font-size: 1.2rem;
+line-height : 1.5;
     margin-bottom: 30px;
     color: #555;
 }
